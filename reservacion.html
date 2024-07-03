@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>  RESERVACIÓN </title>
+	<style type="text/css">
+		h1{text-align:center; color:black;
+			font-family: Cambria;
+      		font-size: 24pts;background: white;
+      		padding: 40px;}
+            h2{text-align:center; color:#AC8C18;
+            font-family: Cambria;
+            font-size: 20pts;
+            }
+		nav{text-align: center;}
+    	nav a{text-decoration: none; color: inherit; font-size: 14px;font-family: Tahoma;}
+    	nav li{display: inline-block;
+            width: 10%;
+            padding: 5px 10px;
+            background-color: #CC9900;
+            border: 1px solid #CC9900;
+            text-align: center;
+            color: white;}
+    	nav li:hover{ background-color:#AC8C18; color:black; }
+    	.logo{float: left;
+          width: 200px;
+          height: 130px;}
+    	.video1{width:500px;
+    	float: left;
+    	height:750px;
+    	margin-right:15px;}
+        .formulario{
+            margin-top: 50 px;
+            float: inherit;
+            text-align: center;
+            font-family:Cambria;
+            font-size: 25pts;}
+        
+		#pie{clear: both;
+		  background-color: #484452;
+		 color: #F8F2DA;
+		 text-align: center;}
+	</style>
+
+</head>
+<body>
+	<header>
+        <a href="index.html"><img class="logo" src="LOGO.png"></a>
+        <h1> RESERVACIÓN</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="habitaciones.html">HABITACIONES</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="paquetes.html">PAQUETES</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="restaurantes.html">RESTAURANTES</a></li>
+            <li><a href="reservaciones.html">RESERVACIONES</a></li>
+        </ul>
+    </nav> 
+    <p>
+        <video class="video1" src="Video.mp4" controls></video>
+    </p>
+    <h2> CONSULTAR MI RESERVACIÓN </h2>
+	<form name="CONSULTAS" action="consultar.php" method="post" class="formulario">
+		<p> CONTRASEÑA DEL USUARIO </p>
+		<input type="number" name="contrasena">
+		<input type="submit" name="consultar" value="Consultar">
+	</form>
+
+	<h2> CANCELAR MI RESERVACIÓN </h2>
+	<form name="BAJAS" action="bajas.php" method="post" class="formulario">
+		<p> CÓDIGO DE RESERVACIÓN </p>
+		<input type="number" name="codigo">
+		<input type="submit" name="eliminar" value="Eliminar">
+	</form>
+
+	<h2> MODIFICAR MI RESERVACIÓN </h2>
+	<form name="MODIFICACIONES" action="modificar.php" method="post" class="formulario">
+		<p> CÓDIGO DE RESERVACIÓN: <input type="number" name="codigo"> </p> 
+        <p> NOMBRE(S): <input type="text" name="nombre"> </p> 
+        <p> APELLIDO:  <input type="text" name="apellido"> </p> 
+        <p> CORREO ELECTRÓNICO: <input type="email" name="correo"> </p>
+        <p> CONTRASEÑA: <input type="password" name="contrasena"> </p>
+        <p> TELÉFONO: <input type="tel" size="10" name="telefono"> </p>
+        <p> <label>ELIJA UNA HABITACIÓN </label> 
+            <p> 
+            <select name="habitaciones">
+                <option value="">Elegir</option>
+                <option value="Playa los Amantes">Playa Los Amantes</option>
+                <option value="Playa Santa Maria">Playa Santa Maria</option>
+                <option value="Playa el Chileno">Playa El Chileno</option>
+                <option value="Playa Empacadora">Playa Empacadora</option>
+                <option value="Playa El Medano">Playa El Medano</option>
+                <option value="Playa Palmilla">Playa Palmilla</option>
+                <option value="Suite Bugambilias">Suite Bugambilias</option>
+                <option value="Suite Tulipanes">Suite Tulipanes</option>
+                <option value="Suite Jazmines">Suite Jazmines</option>
+            </select>
+            </p>
+        </p>
+        <p> CHECK-IN: <input type="date" name="entrada"> </p>
+        <p> CHECK-OUT: <input type="date"name="salida"> </p> 
+        <p> ADULTOS: <input type="number"name="adultos"> </p>
+        <p> NIÑOS: <input type="number"name="ninos"> </p>
+        <input type="submit" name="modificar" value="Modificar"> 
+	</form> 
+
+	<footer>
+		<div id="pie">
+			<ul>CONTACTOS</ul>
+        	<li>Teléfono: 55 1234-5678</li>
+       		<li>Correo: rosseshotel@gmail.com</li>
+    		<li>Página: www.rosseshotel.com</li>
+    		<li>Redes sociales: Facebook e Instagram Rosses Hotel</li>
+        	<ul>ELABORADO POR</ul>
+        	<li>CANO VICTORIANO LUZ CLARITA</li>
+        	<li>ROSAS HERNANDEZ XIMENA ITZEL</li>
+        	<li>SANTOS ENRIQUEZ GUADALUPE</li>
+    	</div>
+  </footer>
+	
+</body>
+</html>

@@ -1,0 +1,124 @@
+h1{text-align:center; color:black;
+            font-size: 24pts;background: white;
+            padding: 40px;
+            font-family: Cambria;}
+h2{text-align:center; color:black;
+    font-size: 25pts;
+    padding-top:4spx;
+    padding-bottom: 20px;
+    padding-top: 15px}
+nav{text-align: center;}
+nav a{text-decoration: none; color: inherit; font-size: 14px;font-family: Tahoma;}
+nav li{display: inline-block;
+        width: 10%;
+        padding: 5px 10px;
+        background-color: #CC9900;
+        border: 1px solid #CC9900;
+        text-align: center; color: white;}
+nav li:hover{ background-color:#AC8C18; color:black; }
+.texto{text-align: justify; font-size: 24pts;
+    font-family: Cambria;}
+.logo{float: left;
+    width: 200px; height: 130px;}
+.HBD1{margin-top:3em;
+    margin-left: 3em;
+    margin-bottom:5em;}
+.descripcion1{margin-right:3em;
+            padding-left:20px;
+            display: flex;
+            font-family:Cambria;
+            font-size: 25pts;
+            padding-top:1px;
+            margin-bottom:12em;}
+.habiI{float: left;
+        width: 600px;
+        height: 300px;}
+.habiD{float: right;
+        width: 600px;
+        height: 300px;}     
+.HBD2{margin-right:3em;
+        margin-bottom:5em;
+        padding-top:10px;}
+
+.descripcion2{padding-right:25px;
+            padding-left:20px;
+            display: flex;
+            font-family:Cambria;
+            font-size: 25pts;
+            padding-top:1px;
+            margin-bottom:11em;}
+.hab3{margin-bottom: 17em;
+    margin-top: 10em;
+    margin-left: 3em;}
+.text3{display: flex;
+    font-family:Cambria;
+    font-size: 25pts;
+    padding-top:1px;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-bottom: 13em;}
+.HBD4{margin-right:3em;
+    margin-bottom:5em;
+    padding-top:8px;}
+.descripcion4{padding-right:25px;
+            padding-left:20px;
+            display: flex;
+            font-family:Cambria;
+            font-size: 25pts;
+            padding-top:1px;
+            margin-bottom:12em;}
+.hab5{margin-bottom: 14em;
+    margin-top: 10em;
+    margin-left: 3em;}
+.text5{display: flex;
+        font-family:Cambria;
+        font-size: 25pts;
+        padding-top:1px;
+        padding-left:20px;
+        padding-right: 20px;
+        margin-bottom: 14em;}
+.HBD6{margin-right:3em;
+    margin-bottom:2em;
+    padding-top:13px;}
+.descripcion6{padding-right:25px;
+            padding-left:20px;
+            display: flex;
+            font-family:Cambria;
+            font-size: 25pts;
+            padding-top:1px;
+            margin-bottom:10em;}
+.hab7{margin-bottom: 7em;
+    margin-top:2em;
+    margin-left: 3em;}
+.text7{display: flex;
+        font-family:Cambria;
+        font-size: 25pts;
+        padding-top:1px;
+        padding-left:20px;
+        padding-right: 20px;
+        margin-bottom: 14em;}
+.HBD8{margin-right:3em;
+    margin-bottom:5em;
+    padding-top:13px;}
+.descripcion8{padding-right:25px;
+            padding-left:20px;
+            display: flex;
+            font-family:Cambria;
+            font-size: 25pts;
+            padding-top:1px;
+            margin-bottom:15em;}
+.HBD9{margin-top:5em;
+    margin-left:3em;
+    margin-bottom:10em;}
+.descripcion9{display: flex;
+    font-family:Cambria;
+    font-size: 25pts;
+    padding-top:1px;
+    padding-left:20px;
+    padding-right: 20px;}
+#pie{clear: both;
+    background-color: #484452;
+    color: #F8F2DA;
+    margin-top: 5em;
+    text-align: center;}
+.servicio{margin-top: 5em;}

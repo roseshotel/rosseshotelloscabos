@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> RESERVACIONES </title>
+	<style type="text/css">
+		h1{text-align:center; color:black;
+			font-family: Cambria;
+      		font-size: 24pts;background: white;
+      		padding: 40px;}
+		nav{text-align: center;}
+    	nav a{text-decoration: none; color: inherit; font-size: 14px;font-family: Tahoma;}
+    	nav li{display: inline-block;
+            width: 10%;
+            padding: 5px 10px;
+            background-color: #CC9900;
+            border: 1px solid #CC9900;
+            text-align: center;
+            color: white;}
+    	nav li:hover{ background-color:#AC8C18; color:black; }
+    	.logo{float: left;
+          width: 200px;
+          height: 130px;}
+    	.video1{width:600px;
+    	float: left;
+    	height:750px;
+    	margin-right:15px;}
+    	.formulario{
+    	margin-top: 50 px;
+    	float: inherit;
+			text-align: center;
+			font-family:Cambria;
+			font-size: 25pts;}
+
+		#pie{clear: both;
+		  background-color: #484452;
+		 color: #F8F2DA;
+		 text-align: center;}
+	</style>
+	<script type="text/javascript">
+		function registrar(){
+			if (document.registros.nombre.value.length==0) {
+				alert("No ha ingresado su nombre");
+				document.registros.nombre.focus();
+				return 0; 
+			}
+			if (document.registros.apellido.value.length==0) {
+				alert("No ha ingresado su apellido");
+				document.registros.apellido.focus();
+				return 0; 	
+			}
+			if (document.registros.correo.value.length==0) {
+				alert("Correo invalido");
+				document.registros.correo.focus();
+				return 0; 
+			}
+			
+			if (document.registros.contrasena.value.length==0) {
+				alert("Contraseña incorrecta");
+				document.registros.contrasena.focus();
+				return 0; 
+			}
+			if (document.registros.telefono.value.length==0) {
+				alert("No ha ingresado un número de teléfono");
+				document.registros.correo.focus();
+				return 0; 
+			}
+			if(document.registros.habitaciones.selectedIndex==0){
+				alert("Selecciona una habitación");
+				document.registros.habitaciones.focus();
+				return 0;
+			}
+			if (document.registros.entrada.value.length==0) {
+				alert("No ha ingresado la fecha de inicio de su estadia ");
+				document.registros.entrada.focus();
+				return 0; 
+			}
+			if (document.registros.salida.value.length==0) {
+				alert("No ha ingresado la fecha final de su estadia");
+				document.registros.salida.focus();
+				return 0; 
+			}
+
+				alert("Muchas gracias por reservar en Rosse's Hotel");
+				document.registros.submit();
+		}
+	</script>
+	
+</head>
+<body>
+	<header>
+        <a href="index.html"><img class="logo" src="LOGO.png"></a>
+        <h1>RESERVACIONES</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="habitaciones.html">HABITACIONES</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="paquetes.html">PAQUETES</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="restaurantes.html">RESTAURANTES</a></li>
+            <li><a href="reservacion.html">MI RESERVACIÓN</a></li>
+
+        </ul>
+    </nav>  
+    <p>
+    	<video class="video1" src="video2.mp4" controls></video>
+	</p>
+    <form class="formulario" name="registros" action="altas.php" onsubmit="return registrar()" method="post">
+		<p> NOMBRE(S): </p> <input type="text" name="nombre" size="30" >
+		<p> APELLIDO: </p> <input type="text" name="apellido" size="30" >
+		<p> CORREO ELECTRÓNICO: </p> <input type="email" name="correo" size="30" >
+		<p> CONTRASEÑA: </p> <input type="password" name="contrasena" size="5" >
+		<p> TELÉFONO: </p> <input type="tel" size="10" name="telefono" size="10" >
+		<p> <label>ELIJA UNA HABITACIÓN </p>
+		<p> <select name="habitaciones">
+				<option value="">Elegir</option>
+				<option value="Playa los Amantes">Playa Los Amantes</option>
+				<option value="Playa Santa Maria">Playa Santa Maria</option>
+				<option value="Playa el Chileno">Playa El Chileno</option>
+				<option value="Playa Empacadora">Playa Empacadora</option>
+				<option value="Playa El Medano">Playa El Medano</option>
+				<option value="Playa Palmilla">Playa Palmilla</option>
+				<option value="Suite Bugambilias">Suite Bugambilias</option>
+				<option value="Suite Tulipanes">Suite Tulipanes</option>
+				<option value="Suite Jazmines">Suite Jazmines</option>
+			</select>
+		</p>
+		<p> CHECK-IN: </p> <input type="date" name="entrada"> 
+		<p> CHECK-OUT: </p> <input type="date"name="salida"> 
+		<p> ADULTOS: </p> <input type="number"name="adultos"> 
+		<p> NIÑOS: </p> <input type="number"name="ninos"> 
+		<p> <input type="submit" name="insertar" value="ENVIAR" onclick="registrar()"></p>
+	</form>
+	
+	<footer>
+		<div id="pie">
+			<ul>CONTACTOS</ul>
+        	<li>Teléfono: 55 1234-5678</li>
+       		<li>Correo: rosseshotel@gmail.com</li>
+    		<li>Página: www.rosseshotel.com</li>
+    		<li>Redes sociales: Facebook e Instagram Rosses Hotel</li>
+        	<ul>ELABORADO POR</ul>
+        	<li>CANO VICTORIANO LUZ CLARITA</li>
+        	<li>ROSAS HERNANDEZ XIMENA ITZEL</li>
+        	<li>SANTOS ENRIQUEZ GUADALUPE</li>
+ 	 	</div>
+ 	</footer>
+	
+</body>
+</html>
